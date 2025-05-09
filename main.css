@@ -27,11 +27,43 @@ header {
     min-width: 300px;
 }
 
+.hero .right {
+    display: flex;
+    align-items: center; /* Центрирует текст по вертикали */
+    justify-content: center;
+    text-align: left;
+}
+
+
 .hero-img, .news-img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
     border: 1px solid #ccc;
+}
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.news-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news-item .left,
+.news-item .right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.news-text {
+    display: flex;
+    align-items: center; /* Центрирует текст по вертикали */
+    justify-content: center;
+    text-align: left;
 }
 
 .fancy-title {
