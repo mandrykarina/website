@@ -34,9 +34,8 @@ header {
     text-align: left;
 }
 
-.hero .right p,
-.news-text p {
-    font-size: 20px;
+.hero .right p{
+    font-size: 25px;
     line-height: 1.7;
 }
 
@@ -63,12 +62,17 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: center;      /* Важно: выравнивание по вертикали */
+    justify-content: space-between;
 }
 
 .news-item .left,
 .news-item .right {
     flex: 1;
     min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрирование содержимого по горизонтали */
 }
 
 .news-text {
@@ -76,6 +80,11 @@ header {
     align-items: center; /* Центрирует текст по вертикали */
     justify-content: center;
     text-align: left;
+}
+.news-text p {
+    font-size: 25px;
+    line-height: 1.6;
+    max-width: 500px;
 }
 
 .fancy-title {
@@ -97,7 +106,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 100px;
     flex-wrap: wrap;
     text-align: center;
     max-width: 1000px; /* ограничим ширину, чтобы не растягивалось */
@@ -115,7 +124,7 @@ header {
     margin: 0 auto;
 }
 .product-item {
-    width: 200px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center; /* Центровка содержимого */
