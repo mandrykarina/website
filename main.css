@@ -34,12 +34,24 @@ header {
     text-align: left;
 }
 
+.hero .right p,
+.news-text p {
+    font-size: 20px;
+    line-height: 1.7;
+}
 
-.hero-img, .news-img {
+.hero-img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #a89f91;
+}
+
+.news-img {
+    width: 100%;
+    max-width: 350px; /* уменьшили */
+    height: auto;
+    border: 2px solid #a89f91;
 }
 .news {
     display: flex;
@@ -76,15 +88,19 @@ header {
 
 .products {
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center; /* Центрует .product-row */
 }
 
 .product-row {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 40px;
     flex-wrap: wrap;
     text-align: center;
+    max-width: 1000px; /* ограничим ширину, чтобы не растягивалось */
 }
 
 .product-row img {
@@ -100,6 +116,10 @@ header {
 }
 .product-item {
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центровка содержимого */
+    text-align: center;
 }
 
 .product-item img {
@@ -110,14 +130,11 @@ header {
 }
 
 .product-item p {
-    font-size: 14px;
+    font-size: 16px;
+    margin-top: 10px;
     margin: 0;
 }
 
-/* Рамки для других изображений */
-.hero-img, .news-img {
-    border: 2px solid #a89f91;
-}
 
 footer {
     background-color: black;
